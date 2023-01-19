@@ -1,0 +1,32 @@
+{
+  "name": "example",
+  "type": "module",
+  "scripts": {
+    "fmt:prettier": "prettier --write src",
+    "fmt:eslint": "eslint --cache --ext .ts,.tsx src --fix",
+    "lint": "eslint --cache --ext .ts,.tsx src",
+    "dev": "rollup -c rollup.config.js --watch"
+  },
+  "devDependencies": {
+    "@naporin0624/eslint-config": "^0.7.1",
+    "@rollup/plugin-run": "^3.0.1",
+    "@types/node": "^18.11.18",
+    "@types/react": "^18.0.27",
+    "@types/react-dom": "^18.0.10",
+    "esbuild": "^0.17.3",
+    "eslint": "^8.32.0",
+    "prettier": "^2.8.3",
+    "rollup": "^3.10.0",
+    "rollup-plugin-esbuild": "^5.0.0",
+    "typescript": "^4.9.4",
+    "vanilla-extract-inline-rollup-plugin": "link:../rollup-plugin",
+    "vite": "^4.0.4",
+    "vitest": "^0.27.2"
+  },
+  "dependencies": {
+    "@vanilla-extract/css": "^1.9.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "vanilla-extract-inline": "link:../inline"
+  }
+}

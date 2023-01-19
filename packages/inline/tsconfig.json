@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "incremental": true,
+    "tsBuildInfoFile": "./.tsbuildinfo",
+    "composite": true,
+    "outDir": "lib",
+    "target": "es2018",
+    "lib": ["ESNext"],
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "baseUrl": "./",
+    "rootDir": "src",
+    "paths": {},
+    "types": ["vitest/globals"],
+    "resolveJsonModule": true,
+    "emitDeclarationOnly": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true
+  },
+  "include": ["src"]
+}

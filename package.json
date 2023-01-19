@@ -1,0 +1,18 @@
+{
+  "name": "single-file-build",
+  "packageManager": "yarn@3.3.1",
+  "workspaces": [
+    "packages/*"
+  ],
+  "private": true,
+  "scripts": {
+    "build": "ultra -r build",
+    "fmt:prettier": "ultra -r fmt:prettier",
+    "fmt:eslint": "ultra -r fmt:eslint",
+    "lint": "ultra -r lint",
+    "dev": "ultra -r dev"
+  },
+  "devDependencies": {
+    "ultra-runner": "^3.10.5"
+  }
+}

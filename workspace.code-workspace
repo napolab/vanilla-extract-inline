@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "packages/rollup-plugin"
+		},
+		{
+			"path": "packages/inline"
+		},
+		{
+			"path": "packages/examples"
+		}
+	],
+	"settings": {
+		"typescript.tsdk": "node_modules/typescript/lib"
+	}
+}
