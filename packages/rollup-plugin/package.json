@@ -1,5 +1,5 @@
 {
-  "name": "@vanilla-extract-inline/rollup-plugin",
+  "name": "@naporin0624/vanilla-extract-inline-rollup-plugin",
   "main": "lib/index.cjs",
   "module": "lib/index.mjs",
   "types": "lib/index.d.ts",

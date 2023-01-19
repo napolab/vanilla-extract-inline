@@ -1,5 +1,5 @@
 {
-  "name": "@vanilla-extract-inline/runtime",
+  "name": "@naporin0624/vanilla-extract-inline-runtime",
   "main": "lib/index.cjs",
   "module": "lib/index.mjs",
   "types": "lib/index.d.ts",

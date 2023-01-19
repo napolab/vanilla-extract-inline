@@ -711,6 +711,53 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@naporin0624/vanilla-extract-inline-rollup-plugin@link:../rollup-plugin::locator=example%40workspace%3Apackages%2Fexamples":
+  version: 0.0.0-use.local
+  resolution: "@naporin0624/vanilla-extract-inline-rollup-plugin@link:../rollup-plugin::locator=example%40workspace%3Apackages%2Fexamples"
+  languageName: node
+  linkType: soft
+
+"@naporin0624/vanilla-extract-inline-rollup-plugin@workspace:packages/rollup-plugin":
+  version: 0.0.0-use.local
+  resolution: "@naporin0624/vanilla-extract-inline-rollup-plugin@workspace:packages/rollup-plugin"
+  dependencies:
+    "@naporin0624/eslint-config": ^0.7.1
+    "@vanilla-extract/integration": ^6.0.1
+    esbuild: ^0.17.3
+    eslint: ^8.32.0
+    prettier: ^2.8.3
+    rollup: ^3.10.0
+    rollup-plugin-esbuild: ^5.0.0
+    typescript: ^4.9.4
+    vite: ^4.0.4
+    vitest: ^0.27.2
+  peerDependencies:
+    rollup: ">=3.0.0"
+  languageName: unknown
+  linkType: soft
+
+"@naporin0624/vanilla-extract-inline-runtime@link:../runtime::locator=example%40workspace%3Apackages%2Fexamples":
+  version: 0.0.0-use.local
+  resolution: "@naporin0624/vanilla-extract-inline-runtime@link:../runtime::locator=example%40workspace%3Apackages%2Fexamples"
+  languageName: node
+  linkType: soft
+
+"@naporin0624/vanilla-extract-inline-runtime@workspace:packages/runtime":
+  version: 0.0.0-use.local
+  resolution: "@naporin0624/vanilla-extract-inline-runtime@workspace:packages/runtime"
+  dependencies:
+    "@naporin0624/eslint-config": ^0.7.1
+    esbuild: ^0.17.3
+    eslint: ^8.32.0
+    prettier: ^2.8.3
+    rollup: ^3.10.0
+    rollup-plugin-esbuild: ^5.0.0
+    typescript: ^4.9.4
+    vite: ^4.0.4
+    vitest: ^0.27.2
+  languageName: unknown
+  linkType: soft
+
 "@nodelib/fs.scandir@npm:2.1.5":
   version: 2.1.5
   resolution: "@nodelib/fs.scandir@npm:2.1.5"
@@ -1051,53 +1098,6 @@ __metadata:
   checksum: 4d83d1e4b39ad76fe865b0580dbfcad6d6f9e936de3d40c1c13d552d40e394eab390a7f9d1172ba59ce457853b93ed0ec253642e6d07cd6cf4fa0b5ec006f0c4
   languageName: node
   linkType: hard
-
-"@vanilla-extract-inline/rollup-plugin@link:../rollup-plugin::locator=example%40workspace%3Apackages%2Fexamples":
-  version: 0.0.0-use.local
-  resolution: "@vanilla-extract-inline/rollup-plugin@link:../rollup-plugin::locator=example%40workspace%3Apackages%2Fexamples"
-  languageName: node
-  linkType: soft
-
-"@vanilla-extract-inline/rollup-plugin@workspace:packages/rollup-plugin":
-  version: 0.0.0-use.local
-  resolution: "@vanilla-extract-inline/rollup-plugin@workspace:packages/rollup-plugin"
-  dependencies:
-    "@naporin0624/eslint-config": ^0.7.1
-    "@vanilla-extract/integration": ^6.0.1
-    esbuild: ^0.17.3
-    eslint: ^8.32.0
-    prettier: ^2.8.3
-    rollup: ^3.10.0
-    rollup-plugin-esbuild: ^5.0.0
-    typescript: ^4.9.4
-    vite: ^4.0.4
-    vitest: ^0.27.2
-  peerDependencies:
-    rollup: ">=3.0.0"
-  languageName: unknown
-  linkType: soft
-
-"@vanilla-extract-inline/runtime@link:../runtime::locator=example%40workspace%3Apackages%2Fexamples":
-  version: 0.0.0-use.local
-  resolution: "@vanilla-extract-inline/runtime@link:../runtime::locator=example%40workspace%3Apackages%2Fexamples"
-  languageName: node
-  linkType: soft
-
-"@vanilla-extract-inline/runtime@workspace:packages/runtime":
-  version: 0.0.0-use.local
-  resolution: "@vanilla-extract-inline/runtime@workspace:packages/runtime"
-  dependencies:
-    "@naporin0624/eslint-config": ^0.7.1
-    esbuild: ^0.17.3
-    eslint: ^8.32.0
-    prettier: ^2.8.3
-    rollup: ^3.10.0
-    rollup-plugin-esbuild: ^5.0.0
-    typescript: ^4.9.4
-    vite: ^4.0.4
-    vitest: ^0.27.2
-  languageName: unknown
-  linkType: soft
 
 "@vanilla-extract/babel-plugin-debug-ids@npm:^1.0.0":
   version: 1.0.0
@@ -2612,12 +2612,12 @@ __metadata:
   resolution: "example@workspace:packages/examples"
   dependencies:
     "@naporin0624/eslint-config": ^0.7.1
+    "@naporin0624/vanilla-extract-inline-rollup-plugin": "link:../rollup-plugin"
+    "@naporin0624/vanilla-extract-inline-runtime": "link:../runtime"
     "@rollup/plugin-run": ^3.0.1
     "@types/node": ^18.11.18
     "@types/react": ^18.0.27
     "@types/react-dom": ^18.0.10
-    "@vanilla-extract-inline/rollup-plugin": "link:../rollup-plugin"
-    "@vanilla-extract-inline/runtime": "link:../runtime"
     "@vanilla-extract/css": ^1.9.2
     esbuild: ^0.17.3
     eslint: ^8.32.0

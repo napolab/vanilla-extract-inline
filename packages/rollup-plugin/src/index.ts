@@ -9,7 +9,7 @@ import {
 import type { IdentifierOption, CompileOptions } from "@vanilla-extract/integration";
 import type { Plugin } from "rollup";
 
-const PACKAGE_NAME = "@vanilla-extract-inline/runtime";
+const PACKAGE_NAME = "@naporin0624/vanilla-extract-inline-runtime";
 const entrypoint = `${PACKAGE_NAME}-entrypoint`;
 
 interface Options {
