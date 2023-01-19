@@ -1,5 +1,5 @@
 {
-  "name": "single-file-build",
+  "name": "vanilla-extract-inline",
   "packageManager": "yarn@3.3.1",
   "workspaces": [
     "packages/*"

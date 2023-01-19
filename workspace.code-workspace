@@ -7,7 +7,7 @@
 			"path": "packages/rollup-plugin"
 		},
 		{
-			"path": "packages/inline"
+			"path": "packages/runtime"
 		},
 		{
 			"path": "packages/examples"

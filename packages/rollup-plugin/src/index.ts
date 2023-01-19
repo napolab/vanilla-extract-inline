@@ -9,8 +9,8 @@ import {
 import type { IdentifierOption, CompileOptions } from "@vanilla-extract/integration";
 import type { Plugin } from "rollup";
 
-const SINGLE_FILE_ID = "vanilla-extract-inline";
-const entrypoint = `${SINGLE_FILE_ID}-entrypoint`;
+const PACKAGE_NAME = "@vanilla-extract-inline/runtime";
+const entrypoint = `${PACKAGE_NAME}-entrypoint`;
 
 interface Options {
   identifiers?: IdentifierOption;
@@ -53,7 +53,7 @@ export function inlinePlugin({ identifiers, cwd = process.cwd(), esbuildOptions 
       };
     },
     async resolveId(id) {
-      if (id === SINGLE_FILE_ID) return id;
+      if (id === PACKAGE_NAME) return id;
 
       if (!virtualCssFileFilter.test(id)) {
         return null;
@@ -68,7 +68,7 @@ export function inlinePlugin({ identifiers, cwd = process.cwd(), esbuildOptions 
     },
     async load(id) {
       if (assets.has(id)) return "";
-      if (id === SINGLE_FILE_ID) return `export default \`${entrypoint}\``;
+      if (id === PACKAGE_NAME) return `export default \`${entrypoint}\``;
 
       return null;
     },

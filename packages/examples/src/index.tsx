@@ -1,7 +1,7 @@
 import { writeFile } from "fs/promises";
 
+import stylesheet from "@vanilla-extract-inline/runtime";
 import { renderToString } from "react-dom/server";
-import stylesheet from "vanilla-extract-inline";
 
 import App from "./app";
 
